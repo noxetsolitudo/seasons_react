@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 3rem;
+}
+
+.frame {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 10rem;
+  border: 5px solid #222;
+}
+
+img:hover {
+  transition: 0.5s ease-in-out;
+  transform: scale(0.98);
+}
+img:not(:hover) {
+  transition: 0.5s ease-in-out;
+  transform: scale(1);
+}
+
+img:active {
+  transition: 0.1s ease-in-out;
+  transform: scale(0.96);
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-left {
+  align-items: flex-start;
+}
+
+.myb {
+  margin-bottom: 2rem;
+}
+
+span {
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
